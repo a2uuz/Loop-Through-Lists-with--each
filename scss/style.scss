@@ -1,0 +1,25 @@
+// ======================================
+//  Loops
+// ======================================
+
+// @for $i from 1 through 10 {
+//   .box-#{$i} {
+//     background-color: adjust-hue(tomato, $i * 20);
+//   }
+// }
+
+// $macalimiinta: ('abdi', 'ahmed', 'farah', 'qasim');
+
+// @each $macalin in macalimiinta {
+//   .macalin-#{$macalin} {
+//     background-image: url('img/#{$macalin}.jpg');
+//   }
+// }
+
+$macalimiinta: ('ahmed', 'alena', 'joel', 'danielle', 'nick', 'aisha');
+
+@each $macalin in $macalimiinta {
+  .macalin-#{$macalin} {
+    background-image: url('img/#{$macalin}.jpg');
+  }
+}
